@@ -2384,17 +2384,17 @@ case "$DEVICE" in
 
     "hotdog"|"guacamole")
         sed -i \
-            -e 's block/platform/soc/1d84000.ufshc/by-name/super sda15 ' \
-            -e 's block/platform/soc/1d84000.ufshc/by-name/userdata sda22 ' \
-            -e 's block/platform/soc/1d84000.ufshc/by-name/metadata sda20 ' \
-            -e 's block/platform/soc/1d84000.ufshc/by-name/modem_a sde4 ' \
-            -e 's block/platform/soc/1d84000.ufshc/by-name/modem_b sde31 ' \
-            -e 's block/platform/soc/1d84000.ufshc/by-name/dsp_a sde9 ' \
-            -e 's block/platform/soc/1d84000.ufshc/by-name/dsp_b sde36 ' \
-            -e 's block/platform/soc/1d84000.ufshc/by-name/persist sda2 ' \
-            -e 's block/platform/soc/1d84000.ufshc/by-name/bluetooth_a sde5 ' \
-            -e 's block/platform/soc/1d84000.ufshc/by-name/bluetooth_b sde32 ' \
-            -e 's block/platform/soc/1d84000.ufshc/by-name/misc sda3 ' \
+            -e 's block/sda15 sda15 ' \
+            -e 's block/sda22 sda22 ' \
+            -e 's block/sda20 sda20 ' \
+            -e 's block/sde4 sde4 ' \
+            -e 's block/sde31 sde31 ' \
+            -e 's block/sde9 sde9 ' \
+            -e 's block/sde36 sde36 ' \
+            -e 's block/sda2 sda2 ' \
+            -e 's block/sde5 sde5 ' \
+            -e 's block/sde32 sde32 ' \
+            -e 's block/sda3 sda3 ' \
             "$@"
         ;;
     *)
